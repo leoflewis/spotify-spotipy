@@ -33,4 +33,3 @@ related_artists = spotify.artist_related_artists(str_id)
 print('Related artists:')
 for artist in related_artists['artists']:
 	print('-' + artist['name'])
-print(spotify.current_user())
