@@ -23,7 +23,7 @@ for track in artist_results['tracks']:
 	print('-' + track['name'])
 print()
 print('Artist albums:')
-artist_albums = spotify.artist_albums(str_id)
+artist_albums = spotify.artist_albums(str_id, album_type='album', country='US', offset=0, limit=50)
 for album in artist_albums['items']:
 	print('-' + album['name'])
 print()
