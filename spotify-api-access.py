@@ -2,7 +2,6 @@ import sys
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-uri = 'spotify:artist:36QJpDe2go2KgaRleHCDTp'
 spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
 if len(sys.argv) > 1:
